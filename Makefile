@@ -1,9 +1,9 @@
 SHELL := bash
 PATH := ./venv/bin:${PATH}
-PYTHON = python3.7
+PYTHON = python3
 PROJECT = flask_base
 isort = isort -rc -ac $(PROJECT) tests
-black = black -S -l 79 --target-version py37 $(PROJECT) tests
+black = black -S -l 79 --target-version py38 $(PROJECT) tests
 
 
 venv:
